@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Akarin Sangyor | Profile Dashboard</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- site icon -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+   <link rel="icon" href="images/fevicon.png" type="image/png" />
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <!-- site css -->
+   <link rel="stylesheet" href="style.css" />
+   <!-- responsive css -->
+   <link rel="stylesheet" href="css/responsive.css" />
+   <!-- color css -->
+   <link rel="stylesheet" href="css/colors.css" />
+   <!-- select bootstrap -->
+   <link rel="stylesheet" href="css/bootstrap-select.css" />
+   <!-- scrollbar css -->
+   <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+   <!-- custom css -->
+   <link rel="stylesheet" href="css/custom.css" />
+   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+   <link rel="stylesheet" href="mystyle.css" />
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+
+<body class="dashboard dashboard_1">
+   <div class="full_container">
+      <div class="inner_container">
+         <!-- Sidebar  -->
+         <nav id="sidebar">
+            <div class="sidebar_blog_1">
+               <div class="sidebar-header">
+                  <div class="logo_section">
+                     <a href="index.html"><img class="logo_icon img-responsive" src="images/logo/logo_icon.png"
+                           alt="#" /></a>
+                  </div>
+               </div>
+               <div class="sidebar_user_info">
+                  <div class="icon_setting"></div>
+                  <div class="user_profle_side">
+                     <div class="user_img"><img class="img-responsive"
+                           src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t1.6435-9/74236376_787574748339383_431226536268398592_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeG67m9YcJ-xSF84Kqz3SuaKvWNG8OqYwHi9Y0bw6pjAeBw3CkF8T5Qi4EQqgraH-BqMfgWL4zUSL2tQfn4FP_bd&_nc_ohc=ytkiTvKt6z4AX8sbm87&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT92CAhsY5Tr5gGMLr4X8fAXB_XGT18XmSmk4Iy229sGTg&oe=61EC0821"
+                           alt="#" />
+                     </div>
+                     <div class="user_info" id="myname">
+                        <h6>{{ name }}</h6>
+                        <p><span class="online_animation"></span> Online</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="sidebar_blog_2">
+               <h4>General</h4>
+               <ul class="list-unstyled components">
+                  <li class="active">
+                     <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                     <ul class="collapse list-unstyled" id="dashboard">
+                        <li>
+                           <a href="#">> <span>Default Dashboard</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Dashboard style 2</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li><a href="#"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
+                  <li>
+                     <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-diamond purple_color"></i> <span>Elements</span></a>
+                     <ul class="collapse list-unstyled" id="element">
+                        <li><a href="#">> <span>General Elements</span></a></li>
+                        <li><a href="#">> <span>Media Gallery</span></a></li>
+                        <li><a href="#">> <span>Icons</span></a></li>
+                        <li><a href="#">> <span>Invoice</span></a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
+                  <li>
+                     <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-object-group blue2_color"></i> <span>Apps</span></a>
+                     <ul class="collapse list-unstyled" id="apps">
+                        <li><a href="#">> <span>Email</span></a></li>
+                        <li><a href="#">> <span>Calendar</span></a></li>
+                        <li><a href="#">> <span>Media Gallery</span></a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#"><i class="fa fa-briefcase blue1_color"></i> <span>Pricing Tables</span></a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <i class="fa fa-paper-plane red_color"></i> <span>Contact</span></a>
+                  </li>
+                  <li class="active">
+                     <a href="#additional_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                           class="fa fa-clone yellow_color"></i> <span>Additional Pages</span></a>
+                     <ul class="collapse list-unstyled" id="additional_page">
+                        <li>
+                           <a href="#">> <span>Profile</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Projects</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>Login</span></a>
+                        </li>
+                        <li>
+                           <a href="#">> <span>404 Error</span></a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li><a href="#"><i class="fa fa-map purple_color2"></i> <span>Map</span></a></li>
+                  <li><a href="#"><i class="fa fa-bar-chart-o green_color"></i> <span>Charts</span></a></li>
+                  <li><a href="#"><i class="fa fa-cog yellow_color"></i> <span>Settings</span></a></li>
+               </ul>
+            </div>
+         </nav>
+         <!-- end sidebar -->
+         <!-- right content -->
+         <div id="content">
+            <!-- topbar -->
+            <div class="topbar">
+               <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="full">
+                     <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i
+                           class="fa fa-bars"></i></button>
+                     <div class="logo_section">
+                        <a href="index.html"><img class="img-responsive" src="images/logo/logo.png" alt="#" /></a>
+                     </div>
+                     <div class="right_topbar">
+                        <div class="icon_info">
+                           <ul>
+                              <li><a href="#"><i class="fa fa-bell-o"></i><span class="badge"></span></a></li>
+                              <li><a href="#"><i class="fa fa-question-circle"></i></a></li>
+                              <li><a href="#"><i class="fa fa-envelope-o"></i><span class="badge"></span></a></li>
+                           </ul>
+                           <ul class="user_profile_dd">
+                              <li>
+                                 <a class="dropdown-toggle" data-toggle="dropdown"><img
+                                       class="img-responsive rounded-circle"
+                                       src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t1.6435-9/74236376_787574748339383_431226536268398592_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeG67m9YcJ-xSF84Kqz3SuaKvWNG8OqYwHi9Y0bw6pjAeBw3CkF8T5Qi4EQqgraH-BqMfgWL4zUSL2tQfn4FP_bd&_nc_ohc=ytkiTvKt6z4AX8sbm87&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT92CAhsY5Tr5gGMLr4X8fAXB_XGT18XmSmk4Iy229sGTg&oe=61EC0821"
+                                       alt="#" /><span class="name_user" id="myname2">{{ name }}</span></a>
+                                 <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">My Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Help</a>
+                                    <a class="dropdown-item" href="#"><span>Log Out</span> <i
+                                          class="fa fa-sign-out"></i></a>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <!-- end topbar -->
+            <!-- dashboard inner -->
+            <div class="midde_cont">
+               <div class="container-fluid">
+                  <div class="row column_title">
+                     <div class="col-md-12">
+                        <div class="page_title" id="headtitle">
+                           <h2>{{ title_dash }}</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Start User Profile  -->
+                  <div class="midde_cont">
+                     <div class="container-fluid">
+                        <!-- row -->
+                        <div class="row column1">
+                           <div class="col-md-2"></div>
+                           <div class="col-md-8">
+                              <div class="white_shd full margin_bottom_30">
+                                 <div class="full graph_head">
+                                    <div class="heading1 margin_0" id="title_userpro">
+                                       <h2>{{title}}</h2>
+                                    </div>
+                                 </div>
+                                 <div class="full price_table padding_infor_info">
+                                    <div class="row">
+                                       <!-- user profile section -->
+                                       <!-- profile image -->
+                                       <div class="col-lg-12">
+                                          <div class="full dis_flex center_text">
+                                             <div class="profile_img"><img width="180" class="rounded-circle"
+                                                   src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t1.6435-9/74236376_787574748339383_431226536268398592_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeG67m9YcJ-xSF84Kqz3SuaKvWNG8OqYwHi9Y0bw6pjAeBw3CkF8T5Qi4EQqgraH-BqMfgWL4zUSL2tQfn4FP_bd&_nc_ohc=ytkiTvKt6z4AX8sbm87&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT92CAhsY5Tr5gGMLr4X8fAXB_XGT18XmSmk4Iy229sGTg&oe=61EC0821"
+                                                   alt="#" /></div>
+                                             <div class="profile_contant">
+                                                <div class="contact_inner" id="aboutme">
+                                                   <h3>{{name}}</h3>
+                                                   <p><strong>{{title}} </strong>{{pos}}</p>
+                                                   <ul class="list-unstyled">
+                                                      <li><i class="fa fa-envelope-o"></i> {{mail}}</li>
+                                                      <li><i class="fa fa-phone"></i> {{phone}}</li>
+                                                   </ul>
+                                                </div>
+                                                <div class="user_progress_bar" id="skill">
+                                                   <div class="progress_bar">
+                                                      <!-- Skill Bars -->
+                                                      <span class="skill" style="width:85%;">{{html}} <span
+                                                            class="info_valume">{{html_skill}}</span></span>
+                                                      <div class="progress skill-bar ">
+                                                         <div
+                                                            class="progress-bar progress-bar-animated progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 85%;">
+                                                         </div>
+                                                      </div>
+                                                      <span class="skill" style="width:65%;">{{css}} <span
+                                                            class="info_valume">{{css_skill}}</span></span>
+                                                      <div class="progress skill-bar">
+                                                         <div
+                                                            class="progress-bar progress-bar-animated progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 65%;">
+                                                         </div>
+                                                      </div>
+                                                      <span class="skill" style="width:90%;">{{bootstrap}}<span
+                                                            class="info_valume">{{bootstrap_skill}}</span></span>
+                                                      <div class="progress skill-bar">
+                                                         <div
+                                                            class="progress-bar progress-bar-animated progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 90%;">
+                                                         </div>
+                                                      </div>
+                                                      <span class="skill" style="width:60%;">{{vue_js}} <span
+                                                            class="info_valume">{{vue_js_skill}}</span></span>
+                                                      <div class="progress skill-bar">
+                                                         <div
+                                                            class="progress-bar progress-bar-animated progress-bar-striped"
+                                                            role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 60%;">
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+
+                                          <!-- profile contant section -->
+                                          <div class="full inner_elements margin_top_30" id="user_pro_content">
+                                             <div class="tab_style2">
+                                                <div class="tabbar">
+                                                   <nav>
+
+                                                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                         <a class="nav-item nav-link active" id="nav-home-tab"
+                                                            data-toggle="tab" href="#recent_activity" role="tab"
+                                                            aria-selected="true">{{profile.title}}</a>
+                                                         <a class="nav-item nav-link" id="nav-profile-tab"
+                                                            data-toggle="tab" href="#project_worked" role="tab"
+                                                            aria-selected="false">{{profile.study_title}}</a>
+                                                         <a class="nav-item nav-link" id="nav-contact-tab"
+                                                            data-toggle="tab" href="#profile_section" role="tab"
+                                                            aria-selected="false">{{profile.hobby_title}}</a>
+                                                      </div>
+                                                   </nav>
+                                                   <div class="tab-content" id="nav-tabContent">
+                                                      <div class="tab-pane fade show active" id="recent_activity"
+                                                         role="tabpanel" aria-labelledby="nav-home-tab">
+                                                         <div class="msg_list_main">
+                                                            <ul class="msg_list">
+                                                               <li>
+                                                                  <p class="text-center"
+                                                                     style="color: #455a64; font-size: 3.5vh;  font-weight: 400;">
+                                                                     {{profile.name}}</p>
+                                                               </li>
+                                                               <li>
+
+                                                                  <p class="text-center"
+                                                                     style="color: #455a64; font-size: 3.5vh;  font-weight: 400;">
+                                                                     {{profile.ethnicity}} &nbsp;&nbsp;&nbsp;
+                                                                     {{profile.nationality}}
+                                                                  </p>
+
+                                                               </li>
+                                                               <li>
+                                                                  <p class="text-center"
+                                                                     style="color: #455a64; font-size: 3.5vh;  font-weight: 400;">
+                                                                     {{profile.age}}</p>
+                                                               </li>
+                                                               <li>
+                                                                  <p class="text-center"
+                                                                     style="color: #455a64; font-size: 3.5vh;  font-weight: 400;">
+                                                                     {{profile.address}}</p>
+                                                               </li>
+                                                            </ul>
+                                                         </div>
+                                                      </div>
+                                                      <div class="tab-pane fade" id="project_worked" role="tabpanel"
+                                                         aria-labelledby="nav-profile-tab">
+
+                                                         <div class="text-center">
+                                                            <img
+                                                               src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t1.6435-9/87315863_2454187811561446_2593557306390085632_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEeFevgiY_Uj2vQIRgfJQDvJI2pLKGlFKwkjaksoaUUrJB1O-Cy8IJE3nx4LAj1QQsKrc1PnrSQRdrpygeMM9Qj&_nc_ohc=2vKjKnEu0Z8AX_tKxV0&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT_i271C-nrBLrSsKdXdr4O3rPl6Kxdr2RCP26kjI-99PA&oe=61ECCC4D"
+                                                               class="img-fluid" style="width: 7.5rem; ">
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400; padding-bottom: 5px;">
+                                                               {{profile.study1}}
+                                                            </h1>
+                                                            <br>
+                                                            <img
+                                                               src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.6435-9/37594141_295087071050435_6871399957895577600_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFA53yHzgCRpaEWjXEOPyMgt0HS4H2A_PW3QdLgfYD89b84seZwqtGdvN9hTC1B9TRAu54QW04OZQ9kpIEvgY7a&_nc_ohc=7_x-UgItyioAX9-GM8U&_nc_ht=scontent.fbkk10-1.fna&oh=00_AT_M606seEVTYoYpKd0KcmX_StxB85YclJ-UoLf-eADpTQ&oe=61EBF09C"
+                                                               class="img-fluid" style="width: 7.5rem; ">
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400;">
+                                                               {{profile.study2}}
+                                                            </h1>
+                                                            <br><br>
+                                                            <img
+                                                               src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t1.6435-9/109944454_662763487659963_7752140597537204605_n.png?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHTRCIZmXRcq3QZh9YdrsMQiIiQPqqasneIiJA-qpqydyTKGFQvqsmBZ68gNlcy5AiMmRb9PfTw8T7aYjFb0kxm&_nc_ohc=YQHMW0Zo_CUAX8NaLq3&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT8LoMcqKsziEcCKkpkWtvFR6zBIwsWGrfBMeawAajQY1Q&oe=61E9C48B"
+                                                               class="img-fluid" style="width: 7.5rem; ">
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400;">
+                                                               {{profile.study3}}
+                                                            </h1>
+                                                            <br><br>
+                                                            <img
+                                                               src="http://3.bp.blogspot.com/_tF_DyjQ-CPA/TMJyzZqNdDI/AAAAAAAAEPw/UkQlchTw3YI/s1600/mju_logo.jpg"
+                                                               class="img-fluid" style="width: 7.5rem; ">
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400;">
+                                                               {{profile.study4}}
+                                                            </h1>
+                                                         </div>
+
+                                                      </div>
+                                                      <div class="tab-pane fade" id="profile_section" role="tabpanel"
+                                                         aria-labelledby="nav-contact-tab">
+                                                         <div class="text-center">
+                                                            <i class="fas fa-4x fa-gamepad" style="color: red;"></i>
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400; padding-bottom: 10px;">
+                                                               {{profile.hobby1}}
+                                                            </h1>
+                                                            <br>
+                                                            <i class="fas fa-4x fa-futbol-o" style="color: black;"></i>
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400;">
+                                                               {{profile.hobby2}}
+                                                            </h1>
+                                                            <br><br>
+                                                            <i class="fas fa-4x fa-basketball-ball"
+                                                               style="color: orangered;"></i>
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400;">
+                                                               {{profile.hobby3}}
+                                                            </h1>
+                                                            <br><br>
+                                                            <i class="fas fa-4x fa-motorcycle"
+                                                               style="color: rgb(78, 78, 78);"></i>
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400;">
+                                                               {{profile.hobby4}}
+                                                            </h1>
+                                                            <br><br>
+                                                            <i class="fas fa-4x fa-map-marked-alt"
+                                                               style="color: rgb(53, 127, 255); padding-bottom: 10px;"></i>
+                                                            <h1
+                                                               style="color: #455a64; font-size: 3vh;  font-weight: 400;">
+                                                               {{profile.hobby5}}
+                                                            </h1>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- end user profile section -->
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-md-2"></div>
+                           </div>
+                           <!-- end row -->
+                        </div>
+                     </div>
+                     <!-- end dashboard inner -->
+                  </div>
+                  <!-- End user profile -->
+
+
+                  <div class="row column1">
+                     <div class="col-md-6 col-lg-3">
+                        <div class="full counter_section margin_bottom_30">
+                           <div class="couter_icon">
+                              <div>
+                                 <i class="fa fa-male yellow_color"></i>
+                              </div>
+                           </div>
+                           <div class="counter_no" id="height_me">
+                              <div>
+                                 <p class="total_no">{{ height }}</p>
+                                 <p class="head_couter"> {{ unit }}</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="full counter_section margin_bottom_30">
+                           <div class="couter_icon">
+                              <div>
+                                 <i class="fas fa-weight blue1_color"></i>
+                              </div>
+                           </div>
+                           <div class="counter_no" id="weight_me">
+                              <div>
+                                 <p class="total_no">{{weight}}</p>
+                                 <p class="head_couter">{{unit}}</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="full counter_section margin_bottom_30">
+                           <div class="couter_icon">
+                              <div>
+                                 <i class="fa fa-birthday-cake green_color"></i>
+                              </div>
+                           </div>
+                           <div class="counter_no" id="birth">
+                              <div>
+                                 <p class="total_no">{{year}}</p>
+                                 <p class="head_couter">{{date}}</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="full counter_section margin_bottom_30">
+                           <div class="couter_icon">
+                              <div>
+                                 <i class="fa fa-bed red_color"></i>
+                              </div>
+                           </div>
+                           <div class="counter_no" id="sleep">
+                              <div>
+                                 <p class="total_no">{{time}}</p>
+                                 <p class="head_couter">{{unit}}</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row column1 social_media_section">
+                     <div class="col-md-6 col-lg-3">
+                        <div class="full socile_icons fb margin_bottom_30">
+                           <a href="https://www.facebook.com/profile.php?id=100012605943726" target="_blank">
+                              <div class="social_icon">
+                                 <i class="fa fa-facebook"></i>
+                              </div>
+                           </a>
+
+                           <div class="social_cont">
+                              <ul>
+                                 <li>
+                                    <div id="facebook_friend">
+                                       <span><strong>{{number}}</strong></span>
+                                       <span>{{member}}</span>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div id="facebook_posts">
+                                       <span><strong>{{number}}</strong></span>
+                                       <span>{{member}}</span>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="full socile_icons google_p margin_bottom_30">
+                           <a href="https://www.youtube.com/c/Faza905" target="_blank">
+                              <div class="social_icon">
+                                 <i class="fa fa-youtube"></i>
+                              </div>
+                           </a>
+                           <div class="social_cont" id="youtube">
+                              <ul>
+                                 <li>
+                                    <span><strong>{{number}}</strong></span>
+                                    <span>{{followers}}</span>
+                                 </li>
+                                 <li>
+                                    <span><strong>{{number_video}}</strong></span>
+                                    <span>{{video}}</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="full socile_icons linked margin_bottom_30">
+                           <a href="https://www.instagram.com/fa_akr/" target="_blank">
+                              <div class="social_icon">
+                                 <i class="fa fa-instagram"></i>
+                              </div>
+                           </a>
+                           <div class="social_cont" id="twitter">
+                              <ul>
+                                 <li>
+                                    <span><strong>{{number_followers}}</strong></span>
+                                    <span>{{followers}}</span>
+                                 </li>
+                                 <li>
+                                    <span><strong>{{number_following}}</strong></span>
+                                    <span>{{following}}</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="full socile_icons margin_bottom_30">
+                           <a href="https://github.com/fainwza007" target="_blank">
+                              <div class="social_icon">
+                                 <i class="fa fa-github"></i>
+                              </div>
+                           </a>
+                           <div class="social_cont" id="github">
+
+                              <ul>
+                                 <li>
+                                    <span><strong>{{git_follower}}</strong></span>
+                                    <span>{{followers}}</span>
+                                 </li>
+                                 <li>
+                                    <span><strong>{{num_pro}}</strong></span>
+                                    <span>{{git_project}}</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end graph -->
+                  <div class="row column3" id="testinomial">
+                     <!-- testimonial -->
+                     <div class="col-md-6">
+                        <div class="dark_bg full margin_bottom_30">
+                           <div class="full graph_head">
+                              <div class="heading1 margin_0">
+                                 <h2>{{tn.title}}</h2>
+                              </div>
+                           </div>
+                           <div class="full graph_revenue">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="content testimonial">
+                                       <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
+                                          <!-- Wrapper for carousel items -->
+                                          <div class="carousel-inner">
+                                             <div class="item carousel-item active">
+                                                <div class="img-box"><img
+                                                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png"
+                                                      alt="">
+                                                </div>
+                                                <p class="testimonial">{{tn. python_detail}}</p>
+                                                <p class="overview"><b>{{tn.python_title}}</b>{{tn.python_author}}</p>
+                                             </div>
+                                             <div class="item carousel-item">
+                                                <div class="img-box"><img
+                                                      src="https://brandslogos.com/wp-content/uploads/images/large/java-logo-1.png"
+                                                      alt="">
+                                                </div>
+                                                <p class="testimonial">{{tn.java_detail}}</p>
+                                                <p class="overview"><b>{{tn.java_title}}</b>{{tn.java_author}}</p>
+                                             </div>
+                                             <div class="item carousel-item">
+                                                <div class="img-box"><img
+                                                      src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+                                                      alt="">
+                                                </div>
+                                                <p class="testimonial">{{tn.html_detail}}</p>
+                                                <p class="overview"><b>{{tn.html_title}}</b>{{tn.html_author}}</p>
+                                             </div>
+                                          </div>
+                                          <!-- Carousel controls -->
+                                          <a class="carousel-control left carousel-control-prev"
+                                             href="#testimonial_slider" data-slide="prev">
+                                             <i class="fa fa-angle-left"></i>
+                                          </a>
+                                          <a class="carousel-control right carousel-control-next"
+                                             href="#testimonial_slider" data-slide="next">
+                                             <i class="fa fa-angle-right"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end testimonial -->
+                     <!-- progress bar -->
+                     <div class="col-md-6">
+                        <div class="white_shd full margin_bottom_30">
+                           <div class="full graph_head">
+                              <div class="heading1 margin_0">
+                                 <h2>{{tn.socialtitle}}</h2>
+                              </div>
+                           </div>
+                           <div class="full progress_bar_inner">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="progress_bar">
+                                       <!-- Skill Bars -->
+                                       <span class="skill" style="width:30%;">{{tn.fb_title}} <span
+                                             class="info_valume">{{tn.fb_play}}</span></span>
+                                       <div class="progress skill-bar ">
+                                          <div class="progress-bar progress-bar-animated progress-bar-striped"
+                                             role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 30%;">
+                                          </div>
+                                       </div>
+                                       <span class="skill" style="width:40%;">{{tn.yt_title}} <span
+                                             class="info_valume">{{tn.yt_play}}</span></span>
+                                       <div class="progress skill-bar">
+                                          <div class="progress-bar progress-bar-animated progress-bar-striped"
+                                             role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 40%;">
+                                          </div>
+                                       </div>
+                                       <span class="skill" style="width:10%;">{{tn.ig_title}} <span
+                                             class="info_valume">{{tn.ig_play}}</span></span>
+                                       <div class="progress skill-bar">
+                                          <div class="progress-bar progress-bar-animated progress-bar-striped"
+                                             role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 10%;">
+                                          </div>
+                                       </div>
+                                       <span class="skill" style="width:15%;">{{tn.line_title}} <span
+                                             class="info_valume">{{tn.line_play}}</span></span>
+                                       <div class="progress skill-bar">
+                                          <div class="progress-bar progress-bar-animated progress-bar-striped"
+                                             role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 15%;">
+                                          </div>
+                                       </div>
+                                       <span class="skill" style="width:15%;">{{tn.other_title}} <span
+                                             class="info_valume">{{tn.other_play}}</span></span>
+                                       <div class="progress skill-bar">
+                                          <div class="progress-bar progress-bar-animated progress-bar-striped"
+                                             role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 15%;">
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- end progress bar -->
+                  </div>
+                  <div class="row column4 graph">
+                     <div class="col-md-6 margin_bottom_30" id="dailyroutine">
+                        <div class="dash_blog">
+                           <div class="dash_blog_inner">
+                              <div class="dash_head">
+                                 <h3><span><i class="fa fa-calendar"></i> {{dr.title}}</span><span
+                                       class="plus_green_bt"><a href="#">+</a></span></h3>
+                              </div>
+                              <div class="list_cont">
+                                 <p>{{dr.detail}}</p>
+                              </div>
+                              <div class="task_list_main">
+                                 <ul class="task_list">
+                                    <li><a href="#">{{dr.act1}}</a><br><strong>{{dr.act1_time}}</strong></li>
+                                    <li><a href="#">{{dr.act2}}</a><br><strong>{{dr.act2_time}}</strong></li>
+                                    <li><a href="#">{{dr.act3}}</a><br><strong>{{dr.act3_time}}</strong></li>
+                                    <li><a href="#">{{dr.act4}}</a><br><strong>{{dr.act4_time}}</strong></li>
+                                    <li><a href="#">{{dr.act5}}</a><br><strong>{{dr.act5_time}}</strong></li>
+                                 </ul>
+                              </div>
+                              <div class="read_more">
+                                 <div class="center"><a class="main_bt read_bt" href="#">Read More</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6" id="friend">
+                        <div class="dash_blog">
+                           <div class="dash_blog_inner">
+                              <div class="dash_head">
+                                 <h3><span><i class="fa fa-comments-o"></i> {{fr.title}}</span><span
+                                       class="plus_green_bt"><a href="#">+</a></span></h3>
+                              </div>
+                              <div class="list_cont">
+                                 <p>{{fr.detail}}</p>
+                              </div>
+                              <div class="msg_list_main">
+                                 <ul class="msg_list">
+                                    <li>
+                                       <span><img
+                                             src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t1.6435-9/65308718_1077834025760409_4225468656361930752_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEuoqNkete370B25f23y8uWKqjKDw9IgKEqqMoPD0iAoaAI1sU1x71x15LlyKESWRtQbGyKY411k0FO8sEIdsJj&_nc_ohc=3p62rx8bTpMAX8V1qaO&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT-dsXgQQA1bymlMgIObOgLVmRh2MRgOVJRVFnsXPbDizw&oe=61EC2551"
+                                             class="img-responsive" alt="#" /></span>
+                                       <span>
+                                          <span class="name_user">{{fr.friend1}}</span>
+                                          <span class="msg_user">{{fr.friend1_nickname}}</span>
+                                          <span class="time_ago">{{fr.friend1_stuid}}</span>
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span><img
+                                             src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t31.18172-8/13603531_1759826717609169_1309644638195409580_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFcpKVlnxMJAjq2jOpjiMlDMtRDOwSOKbYy1EM7BI4ptiFV8dKi2s4Im0u7Zdn_9ObfLvgMX0P3aN9NhxGK7peP&_nc_ohc=raaX6l1DcmUAX9l30G2&_nc_oc=AQnIZJFQxMcXoBYCdfw7YKU6uFbdX3vxLFgjiFQafQkAhFH4FRR51vemITpxAprd9GA&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT-qSJQWLgTpTqvfONwLZH8IaL6Gem8SyKkPGrHyGgjhUg&oe=61ECCBC9"
+                                             alt="#" /></span>
+                                       <span>
+                                          <span class="name_user">{{fr.friend2}}</span>
+                                          <span class="msg_user">{{fr.friend2_nickname}}</span>
+                                          <span class="time_ago">{{fr.friend2_stuid}}</span>
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span><img
+                                             src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t1.15752-9/236696520_163206339221463_7396117652722057964_n.png?_nc_cat=108&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeFVsco4uVUnxPBym9bFmglTnIeEK_Ru4UCch4Qr9G7hQIkTDLuNcdssF5nJ3-6IOC7hf5tdhQIqDcdQi-fGyNcU&_nc_ohc=mO0pNNTa-BMAX_F4TnA&_nc_oc=AQncm0C7rUS2mWTlN7J345973XqpulbQPo3HkyAoMbBtjpsLvFoiRq6wSsRXNwiBWbU&_nc_ht=scontent.fcnx1-1.fna&oh=03_AVIjYLgS5oSI_iogu-A6jVQlKqRC-oW-G5jW_yzQIeexuQ&oe=61EB98E3"
+                                             class="img-responsive" alt="#" /></span>
+                                       <span>
+                                          <span class="name_user">{{fr.friend3}}</span>
+                                          <span class="msg_user">{{fr.friend3_nickname}}</span>
+                                          <span class="time_ago">{{fr.friend3_stuid}}</span>
+                                       </span>
+                                    </li>
+                                    <li>
+                                       <span><img
+                                             src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t1.6435-9/202081163_588910395427865_4283120353665504008_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_eui2=AeF-TA_ApnRVuGtPAY-RPDRePwNaD2GkQYs_A1oPYaRBix_BLVF4KtUOvsk1N2GDGafsLiP0g2kK6tQ7BJkSMCZR&_nc_ohc=7U5uIQadsyIAX9SaEWX&_nc_ht=scontent.fcnx1-1.fna&oh=00_AT_g2ay8uqNVQAlRsoe9QN1jBjg0r9hwyI6nRdCeDTqhuw&oe=61ED7A29"
+                                             class="img-responsive" alt="#" /></span>
+                                       <span>
+                                          <span class="name_user">{{fr.friend4}}</span>
+                                          <span class="msg_user">{{fr.friend4_nickname}}</span>
+                                          <span class="time_ago">{{fr.friend4_stuid}}</span>
+                                       </span>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="read_more">
+                                 <div class="center"><a class="main_bt read_bt" href="#">Read More</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- footer -->
+               <div class="container-fluid" id="footer">
+                  <div class="footer">
+                     <p>{{foot.end}}<br><br>
+                        {{foot.distribute}} <a href="https://themewagon.com/">{{foot.themewagon}}</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- end dashboard inner -->
+         </div>
+      </div>
+   </div>
+   <!-- jQuery -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- wow animation -->
+   <script src="js/animate.js"></script>
+   <!-- select country -->
+   <script src="js/bootstrap-select.js"></script>
+   <!-- owl carousel -->
+   <script src="js/owl.carousel.js"></script>
+   <!-- chart js -->
+   <script src="js/Chart.min.js"></script>
+   <script src="js/Chart.bundle.min.js"></script>
+   <script src="js/utils.js"></script>
+   <script src="js/analyser.js"></script>
+   <!-- nice scrollbar -->
+   <script src="js/perfect-scrollbar.min.js"></script>
+   <script>
+      var ps = new PerfectScrollbar('#sidebar');
+   </script>
+   <!-- custom js -->
+   <script src="js/custom.js"></script>
+   <script src="js/chart_custom_style1.js"></script>
+</body>
+
+<!-- script vue.js variable value -->
+<script src="vue_js_variable.js"></script>
+
+
+
+</html>
